@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@112.5,100..800&display=swap" rel="stylesheet">
+    <title>ENCUESTAS ISC</title>
+    <link rel="stylesheet" href="/css/encuestas.css">
+</head>
+<body>
+
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina" >
+                <ion-icon id="cloud" name="pencil-outline"></ion-icon>
+                <span>ENCUESTAS ISC</span>
+            </div>
+            <a href="index.html" class="boton">
+                <ion-icon name="person-add-outline"></ion-icon>
+                <span>Accede</span>
+            </a>   
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="inbox" href="#">
+                        <ion-icon name="apps-outline"></ion-icon>
+                        <span>Categoria</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <span>Crea tu encuesta</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Modo Oscuro</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <section>
+            <h1>Encuestas Publicadas</h1>
+            <form id="encuestasPublicadas"></form>
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
