@@ -6,7 +6,7 @@
     <title>Login y Register</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/iniciarSesion.css">
+    <link rel="stylesheet" href="css/iniciarSesion.css">
 </head>
 <body>
 
@@ -89,14 +89,14 @@
                     </form>
 
                     <!--Register-->
-                    <form action="" class="formulario__register">
+                    <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo">
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
-                        <button>Regístrarse</button>
-                    </form>
+                        <input type="text" placeholder="Nombre completo" name="nombre_completo" required>
+                        <input type="email" placeholder="Correo Electrónico" name="correo" required>
+                        <input type="text" placeholder="Usuario" name="usuario" required>
+                        <input type="password" placeholder="Contraseña" name="contrasena" required>
+                        <button type="submit">Regístrarse</button>
+                    </form>     
                 </div>
             </div>
         </main>
